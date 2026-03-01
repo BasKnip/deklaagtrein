@@ -1,0 +1,353 @@
+.header {
+  padding: 12px 20px 0;
+  background: var(--kl-cream);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerInner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  cursor: pointer;
+  line-height: 1;
+}
+
+.logoDe {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--kl-text-muted);
+  display: block;
+  margin-bottom: 1px;
+}
+
+.logoKlaag {
+  font-family: var(--kl-font-display);
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--kl-warm);
+  letter-spacing: -0.5px;
+}
+
+.logoTrein {
+  font-family: var(--kl-font-display);
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--kl-ink);
+  letter-spacing: -0.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+}
+
+.nav a {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--kl-text-muted);
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.nav a:hover {
+  color: var(--kl-text-secondary);
+  background: var(--kl-paper);
+  text-decoration: none;
+}
+
+.navActive {
+  color: var(--kl-warm) !important;
+  font-weight: 600 !important;
+  background: var(--kl-warm-bg) !important;
+}
+
+.headerLine {
+  height: 1px;
+  background: var(--kl-border-light);
+  margin: 0 -20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 36px 20px 28px;
+  background: linear-gradient(180deg, var(--kl-cream) 0%, var(--kl-paper) 100%);
+}
+
+.heroTitle {
+  font-family: var(--kl-font-display);
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--kl-ink);
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.heroAccent {
+  color: var(--kl-warm);
+}
+
+.heroSub {
+  font-size: 14px;
+  color: var(--kl-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+  padding: 14px 24px;
+  background: var(--kl-warm);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-family: var(--kl-font-body);
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.btn:hover {
+  background: var(--kl-warm-hover);
+  text-decoration: none;
+}
+
+.btnGhost {
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+  padding: 12px 24px;
+  background: var(--kl-cream);
+  color: var(--kl-text-secondary);
+  border: 1.5px solid var(--kl-border);
+  border-radius: 12px;
+  font-family: var(--kl-font-body);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.btnGhost:hover {
+  border-color: var(--kl-sand);
+  color: var(--kl-ink);
+  text-decoration: none;
+}
+
+.stats {
+  display: flex;
+  gap: 8px;
+  padding: 0 20px;
+  margin-top: -12px;
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stat {
+  flex: 1;
+  background: var(--kl-cream);
+  border: 1.5px solid var(--kl-border);
+  border-radius: var(--kl-radius-md);
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.statValue {
+  font-family: var(--kl-font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--kl-ink);
+}
+
+.statLabel {
+  font-size: 10px;
+  color: var(--kl-text-muted);
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.livePulse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+}
+
+.liveDot {
+  width: 8px;
+  height: 8px;
+  background: #E74C3C;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.liveText {
+  font-family: var(--kl-font-mono);
+  font-size: 11px;
+  color: var(--kl-text-muted);
+  font-weight: 500;
+}
+
+.divider {
+  height: 1px;
+  background: var(--kl-border-light);
+  margin: 0 20px;
+}
+
+.section {
+  padding: 20px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.feedCard {
+  background: var(--kl-cream);
+  border: 1.5px solid var(--kl-border);
+  border-radius: var(--kl-radius-md);
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+
+.feedMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.feedSource {
+  font-family: var(--kl-font-mono);
+  font-size: 11px;
+  color: var(--kl-blue);
+  font-weight: 500;
+}
+
+.feedTime {
+  font-family: var(--kl-font-mono);
+  font-size: 10px;
+  color: var(--kl-text-muted);
+}
+
+.feedText {
+  font-size: 13px;
+  color: var(--kl-ink);
+  line-height: 1.55;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.feedTags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.feedTag {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--kl-text-secondary);
+  background: var(--kl-paper);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.secondCta {
+  text-align: center;
+  padding: 24px 20px 28px;
+}
+
+.secondCtaTitle {
+  font-family: var(--kl-font-display);
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--kl-ink);
+  margin-bottom: 4px;
+}
+
+.secondCtaSub {
+  font-size: 13px;
+  color: var(--kl-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--kl-text-muted);
+  padding: 20px;
+  border-top: 1px solid var(--kl-border-light);
+  margin-top: 12px;
+}
+
+.footerTagline {
+  font-family: var(--kl-font-display);
+  font-style: italic;
+  font-size: 11px;
+  color: var(--kl-sand);
+  margin-top: 3px;
+}
+
+.footerLinks {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.footerLinks a {
+  color: var(--kl-text-muted);
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.footerLinks a:hover {
+  color: var(--kl-warm);
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 24px;
+  }
+
+  .statValue {
+    font-size: 17px;
+  }
+
+  .nav a {
+    font-size: 10px;
+    padding: 3px 5px;
+  }
+}
